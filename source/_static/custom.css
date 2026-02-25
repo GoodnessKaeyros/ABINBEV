@@ -490,7 +490,7 @@ footer p {
    TOP NAVIGATION BAR (STICKY)
    ============================================================= */
 .wy-nav-top {
-  display: block !important;
+  display: none !important;
   background: #988D38 !important;
   color: #ffffff !important;
   padding: 0.4045em 0.809em !important;
@@ -519,6 +519,13 @@ footer p {
 
 .wy-nav-top a:hover {
   opacity: 0.9 !important;
+}
+/* Show top nav on mobile */
+
+@media screen and (max-width: 768px) {
+  .wy-nav-top {
+    display: block !important;
+  }
 }
 
 /* =============================================================
